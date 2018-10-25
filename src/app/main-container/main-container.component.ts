@@ -14,8 +14,6 @@ export class MainContainerComponent implements OnInit {
     sender: string,
     message: string
   }[] = [];
-  activities: Activities[];
-  hotels: {}[];
   type: string;
   request: string;
   response: string;
@@ -28,8 +26,6 @@ export class MainContainerComponent implements OnInit {
 
   ngOnInit() {
     this.chats = this.chatsServices.chats;
-    this.activities = this.tripassistantServices.getActivities();
-    this.hotels = this.tripassistantServices.getHotels();
     this.type = this.tripassistantServices.getType();
     this.request = this.tripassistantServices.getRequest();
     this.response = this.tripassistantServices.getResponse();
