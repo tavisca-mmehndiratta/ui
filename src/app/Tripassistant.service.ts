@@ -5,7 +5,7 @@ export class TripAssistantService {
   private activities: Activities[];
   private hotels: {}[];
   private type: string = 'request';
-  private request: string;
+  private request: string = '';
   private response: string;
   private responseQuery: string;
   private showSpinner: boolean = false;
