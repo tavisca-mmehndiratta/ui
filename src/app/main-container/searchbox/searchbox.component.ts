@@ -61,7 +61,7 @@ export class SearchboxComponent implements OnInit {
         this.tripassistantService.setType(this.response.type);
         this.tripassistantService.setResponse(this.response.responseQuery);
         this.tripassistantService.setResponseQuery(this.response.responseQuery);
-        this.tripassistantService.setRequest(this.final);
+        this.tripassistantService.setRequest(this.response.request);
         this.tripassistantService.setActivities(this.response.activityList);
         this.tripassistantService.setHotels(this.response.hotelList);
         if( this.tripassistantService.getType() == 'request') {
